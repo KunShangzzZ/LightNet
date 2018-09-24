@@ -54,6 +54,9 @@ if isfield(opts,'use_nntoolbox')&&opts.use_nntoolbox==1 %
         if opts.nnet_ver<11
             y = conv2d_nntb.backward( I, [], dzdy, [] );
             gradients = conv2d_nntb.gradients(I, dzdy);
+            if pad(1)~=pad(2)||pad(3)~=pad(4)    
+               PADDING_MODE=1;%introduced without further checking
+            end
             if PADDING_MODE==1
                pad=pad2;
                y=y(1+pad(1):pad(1)+i1,1+pad(3):pad(3)+i2,:,:);
