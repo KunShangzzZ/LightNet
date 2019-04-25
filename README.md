@@ -87,5 +87,4 @@ Nvidia CUDNN can be used to calculate convolutions and linear transforms.
 
 ## References  
 1. Ye, C., Zhao, C., Yang, Y., Fermüller, C., & Aloimonos, Y. (2016, October). LightNet: A Versatile, Standalone Matlab-based Environment for Deep Learning. In Proceedings of the 2016 ACM on Multimedia Conference (pp. 1156-1159). ACM.  
-2. Ye, C., Yang, Y., Fermuller, C., & Aloimonos, Y. (2017). On the Importance of Consistency in Training Deep Neural Networks. arXiv preprint arXiv:1708.00631.  
 
