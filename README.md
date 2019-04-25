@@ -24,13 +24,6 @@ An example recognition using imagenet-vgg-f pretrained net:
 
 20170217: CUDNN is supported by installing Neural Network Toolbox from Mathworks. The convolutional network training is over 10x faster than the previous release! The current version can process 10,000 CIFAR-10 images per second in the training.
 
-20170801: Second-order SGD is introduced (SGD2), together with the corresponding normalization technique RMSnorm and a new ModU activation function. 
-SGD2 is a fast second-order training method (or known as the Newton's method) that trains faster and better, and shows better tolerance to bad initializations. 
-Check it out in \SGD2. 
-
-20-epoch training of a 10-layer-deep network. The network is initialized using Gaussian distribution with std from 10^(-4) to 10^4.
-
-![Init](Init.png)
 
 20170924: A simple example of training a Quasi-RNN is added to LightNet. Quasi-RNNs are much easier to parallelize compared to RNNs. 
 
@@ -93,6 +86,6 @@ Nvidia CUDNN can be used to calculate convolutions and linear transforms.
 2. Set opts.use_nntoolbox=1 in the main tesing script.  
 
 ## References  
-1. Ye, C., Zhao, C., Yang, Y., Fermüller, C., & Aloimonos, Y. (2016, October). LightNet: A Versatile, Standalone Matlab-based Environment for Deep Learning. In Proceedings of the 2016 ACM on Multimedia Conference (pp. 1156-1159). ACM.  
+1. Ye, C., Zhao, C., Yang, Y., FermÃ¼ller, C., & Aloimonos, Y. (2016, October). LightNet: A Versatile, Standalone Matlab-based Environment for Deep Learning. In Proceedings of the 2016 ACM on Multimedia Conference (pp. 1156-1159). ACM.  
 2. Ye, C., Yang, Y., Fermuller, C., & Aloimonos, Y. (2017). On the Importance of Consistency in Training Deep Neural Networks. arXiv preprint arXiv:1708.00631.  
 
